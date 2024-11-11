@@ -1,0 +1,12 @@
+import { z } from "zod"
+
+// We're keeping a simple non-relational schema here.
+// IRL, you will have a schema for your data models.
+export const moduleSchema = z.object({
+  logoUrl: z.string(),
+  name: z.string(),
+  integrationName: z.string(),
+  addModule: z.function()
+})
+
+export type Module = z.infer<typeof moduleSchema>

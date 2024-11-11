@@ -1,0 +1,16 @@
+[
+  {
+    "code": "CALENDAR-1",
+    "name": "Updating google calendar from payfit abscences",
+    "status": "success",
+    "label": "bug",
+    "lastRun": "21/10/2024 22:00"
+  },
+  {
+    "code": "CALENDAR-2-ERR",
+    "name": "Error updating google calendar from payfit abscences",
+    "status": "error",
+    "label": "documentation",
+    "lastRun": "21/10/2024 22:00"
+  }
+]

@@ -1,0 +1,23 @@
+.card-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-container {
+    margin-bottom: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .card-header-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .logo-container {
+      margin-bottom: 0;
+      margin-left: 16px;
+    }
+  }
+  

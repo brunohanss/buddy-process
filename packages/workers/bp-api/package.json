@@ -1,0 +1,29 @@
+{
+	"name": "cloudflare-workers-openapi",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types",
+		"seed:base-module": "wrangler d1 execute buddy-process --file C:\\Users\\hanss\\Desktop\\brux\\packages\\shared\\src\\queries\\baseModule\\seed.sql  --remote",
+		"seed:customer-integration": "wrangler d1 execute buddy-process --file C:\\Users\\hanss\\Desktop\\brux\\packages\\shared\\src\\queries\\customerIntegration\\seed.sql",
+		"seed:process": "wrangler d1 execute buddy-process --file C:\\Users\\hanss\\Desktop\\brux\\packages\\shared\\src\\queries\\process\\seed.sql",
+		"seed:module": "wrangler d1 execute buddy-process --file C:\\Users\\hanss\\Desktop\\brux\\packages\\shared\\src\\queries\\module\\seed.sql",
+		"seed:process-run": "wrangler d1 execute buddy-process --file C:\\Users\\hanss\\Desktop\\brux\\packages\\shared\\src\\queries\\processRun\\seed.sql",
+		"seed:base-integration": "wrangler d1 execute buddy-process --file C:\\Users\\hanss\\Desktop\\brux\\packages\\shared\\src\\queries\\baseIntegration\\seed.sql --remote"
+	},
+	"dependencies": {
+		"@clerk/backend": "^1.15.1",
+		"chanfana": "^2.0.2",
+		"hono": "^4.4.7",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20241022.0",
+		"@types/node": "20.8.3",
+		"@types/service-worker-mock": "^2.0.1",
+		"wrangler": "^3.60.3"
+	}
+}
